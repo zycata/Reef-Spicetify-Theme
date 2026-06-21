@@ -39,3 +39,126 @@
             rgba(251, 7, 217, 1) 90%,
             rgba(255, 0, 0, 1) 100%);
 }
+
+
+.Root__top-container:has(#VideoPlayerCinema_ReactPortal) {
+    padding: 0;
+}
+
+/* Do not display background elements when fullscreen lyrics */
+#main:has(#VideoPlayerCinema_ReactPortal) {
+
+    & .Root__main-view,
+    .Root__right-sidebar,
+    .Root__nav-bar {
+        display: none !important;
+    }
+
+    /* .Root__globalNav {
+        background: black !important;
+    } */
+}
+
+/* Do not display main view when expanded library */
+#main:not(:has(#Desktop_LeftSidebar_Id > .LayoutResizer__resize-bar)) .Root__main-view {
+    display: none !important;
+}
+
+:has([data-overlayscrollbars-initialize="true"]):has(#VideoPlayerCinema_ReactPortal) {
+    outline: none !important;
+}
+
+/* Global */
+.Root__globalNav,
+
+/* Top bar */
+.Root__nav-bar,
+
+.main-entityHeader-container>*,
+.playlist-playlist-playlistContent,
+
+/* Playlist colored background */
+.main-entityHeader-backgroundColor,
+.playlist-playlist-actionBarBackground-background,
+.main-actionBarBackground-background,
+
+.Root__now-playing-bar>button,
+.lyrics-lyrics-background,
+.main-view-container__scroll-node-child>main>section>div>div:nth-child(2),
+.Bdcf5g__Rug3TGqSdbiy,
+
+.Root__now-playing-bar,
+/* Sidebar left your library */
+#Desktop_LeftSidebar_Id,
+.YourLibraryX,
+.main-yourLibraryX-libraryRootlist [role="presentation"],
+.main-yourLibraryX-libraryRootlist [aria-rowindex="1"],
+
+#Desktop_PanelContainer_Id::before,
+.main-home-homeHeader,
+.main-view-container__scroll-node-child>*>*,
+.artist-artistDiscography-headerContainer,
+.main-view-container__scroll-node-child>main>section>div:last-child,
+.search-searchCategory-contentArea::after,
+.main-nowPlayingView-contextItemInfo::before,
+.Box-group-naked-listRow-isInteractive-hasLeadingOrMedia-draggable-minBlockSize_56px,
+
+/* Artist page colored background */
+.main-view-container .before-scroll-node>*>:last-child,
+.main-view-container .before-scroll-node>*>:last-child:after,
+
+/* Fullscreen artist page on playing music */
+/* [data-overlayscrollbars-viewport="scrollbarHidden overflowXHidden overflowYScroll"]>*>*>*>*>*:first-child, */
+
+/* Right sidebar for queue */
+.Root__right-sidebar>*,
+
+/* Fullscreen lyrics */
+[data-overlayscrollbars-initialize="true"]:has(#VideoPlayerCinema_ReactPortal),
+.lyrics-lyrics-container:first-child,
+:has(+.lyrics-lyrics-container),
+
+/* Spicetify marketplace */
+.marketplace-header
+
+/* Remove bg */
+{
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+.view-homeShortcutsGrid-shortcut,
+#Desktop_PanelContainer_Id,
+/* Sidebar left your library */
+.Root__main-view,
+.main-yourLibraryX-library,
+/* Filter tags */
+.ChipInnerComponent-sm {
+    background-color: var(--spice-main-elevated) !important;
+}
+
+/* Artist page gradient image */
+.main-view-container .before-scroll-node>*>:first-child {
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0));
+    position: absolute;
+}
+
+
+#Desktop_PanelContainer_Id {
+    border-radius: 8px;
+}
+
+[data-testid="control-button-skip-forward"] {
+    rotate: 0deg;
+}
+
+[data-testid="control-button-skip-back"] {
+    rotate: 0deg;
+}
+
+[data-tippy-root] form {
+    --background-elevated-base: unset;
+}
+
+
+

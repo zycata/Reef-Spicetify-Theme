@@ -1,0 +1,15 @@
+[
+    {
+        "name": "Reef Theme",
+        "description": "An ocean inspired theme.",
+        "preview": "crab.jpg",
+        "usercss": "user.css",
+        "schemes": "color.ini",
+        "include": ["theme.js"],
+        "readme": "README.md",
+        "authors": [
+            { "name": "Zycata", "url": "https://github.com/zycata/Reef-Spicetify-Theme" }
+        ],
+        "tags": ["reef", "ocean", "fish"]
+    }
+]

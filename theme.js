@@ -16,7 +16,7 @@ function waitForElement(els, func, timeout = 100) {
 }
 
 function refreshTheme(theme) {
-    // refreshLikedSongsImage(theme)
+    refreshLikedSongsImage(theme)
 
     waitForElement([".Root__top-container"], ([el]) => {
         el.style.backgroundImage = `url(${encodeURI(`${GITHUB_URL}/${theme}/background.png?raw=true`)})`;
@@ -38,4 +38,4 @@ function refreshLikedSongsImage(theme) {
 
 
 
-refreshTheme()
+refreshTheme(getTheme())
