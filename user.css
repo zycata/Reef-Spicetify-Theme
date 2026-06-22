@@ -14,7 +14,6 @@
 .x-progressBar-handle {
     transform: translate(-50%, -50%) !important;
     background-color: transparent !important;
-    background-image: url("https://cdn.dribbble.com/userupload/20605456/file/original-113373bcb4a3cd3eb42f45fa78d89b76.gif");
     background-size: cover;
     height: 20px;
     width: 32px;
@@ -118,6 +117,7 @@
 .lyrics-lyrics-container:first-child,
 :has(+.lyrics-lyrics-container),
 
+
 /* Spicetify marketplace */
 .marketplace-header
 
@@ -125,6 +125,17 @@
 {
     background-color: transparent !important;
     background-image: none !important;
+}
+
+/* Top bar when you scroll down on a song */
+.main-topBar-background {
+    opacity: 0.7 !important;
+}
+
+/* The bar when you scroll down a shared album, prevent it from following along */
+.main-trackList-trackListHeader {
+    background-color: transparent !important;
+    position: static !important;
 }
 
 .view-homeShortcutsGrid-shortcut,
