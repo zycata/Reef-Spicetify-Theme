@@ -129,7 +129,12 @@
 
 /* Top bar when you scroll down on a song */
 .main-topBar-background {
-    opacity: 0.7 !important;
+    background: linear-gradient(90deg,
+            rgba(0, 25, 50, 0.50),
+            rgba(0, 70, 110, 0.50)) !important;
+
+    backdrop-filter: blur(14px);
+    /*border-bottom: 1px solid rgba(0, 240, 255, 0.25);*/
 }
 
 /* The bar when you scroll down a shared album, prevent it from following along */
